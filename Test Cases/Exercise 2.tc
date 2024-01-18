@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Exercise 2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c53ab8eb-68bf-4ee7-af2f-3da2fb67788b</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>64d5b785-f55e-4f08-a5cd-469c4d500acb</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/ListOfBookings</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>64d5b785-f55e-4f08-a5cd-469c4d500acb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>firstName</value>
+      <variableId>38e94db3-8268-4dd5-bc0d-290e34d9b004</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>64d5b785-f55e-4f08-a5cd-469c4d500acb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>lastName</value>
+      <variableId>b26d026f-8aaf-4ad8-a391-a0fdfc517e0c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38e94db3-8268-4dd5-bc0d-290e34d9b004</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b26d026f-8aaf-4ad8-a391-a0fdfc517e0c</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variable>
+</TestCaseEntity>

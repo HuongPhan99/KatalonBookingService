@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "EC4F03FB4E6114DA5CF169D279FAAE7D",
+  "keywordClasses": [
+    {
+      "name": "commonKeyWords",
+      "keywordMethods": [
+        {
+          "name": "generateRandomKey",
+          "parameters": [
+            {
+              "name": "length",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * Generate unique string\r\n\t * @return unique string with special length\r\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
