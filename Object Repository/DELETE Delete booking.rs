@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Booking</name>
+   <name>DELETE Delete booking</name>
    <tag></tag>
-   <elementGuidId>c0c020e6-73ab-47ca-b8c2-f46b089ac27d</elementGuidId>
+   <elementGuidId>72b03970-c2f0-4936-a95e-15f70ae255a6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>true</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Accept</name>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Basic YWRtaW46cGFzc3dvcmQxMjM=</value>
+      <webElementGuid>6f271ff7-ede3-4292-a992-381e70db585d</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>29245090-c858-405d-bb67-afac358a58d7</webElementGuid>
+      <webElementGuid>92b43da8-5778-4ce9-a94c-cb1bcb00f2dc</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.1.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
+   <restRequestMethod>DELETE</restRequestMethod>
    <restUrl>${GlobalVariable.baseUrl}/booking/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -31,12 +43,12 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'456'</defaultValue>
+      <defaultValue>'591'</defaultValue>
       <description></description>
-      <id>4b46dc05-1172-4842-a8b4-6e2f6a7f85fe</id>
+      <id>d162b433-5a02-4212-826e-93946981ee15</id>
       <masked>false</masked>
       <name>id</name>
    </variables>
@@ -52,14 +64,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-//def jsonSlurper = new JsonSlurper()
-
-//def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-
-//println jsonResponse
-</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

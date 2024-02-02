@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Exercise 1_2</name>
+   <name>FinalExercises</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -23,18 +23,41 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Exercise 2</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>30ee022f-a248-48d0-a07f-7f2fd2207880</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/ListOfBookings</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>30ee022f-a248-48d0-a07f-7f2fd2207880</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>firstName</value>
          <variableId>38e94db3-8268-4dd5-bc0d-290e34d9b004</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>30ee022f-a248-48d0-a07f-7f2fd2207880</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>lastName</value>
          <variableId>b26d026f-8aaf-4ad8-a391-a0fdfc517e0c</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>19ee52dc-ca25-4681-bcc1-319f024cda78</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Exercise 3</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>09186fd7-82f0-41dd-a371-09292b227496</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Exercise 4</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

@@ -7,7 +7,7 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -33,7 +33,7 @@
       <webElementGuid>74125892-7752-48f9-aa52-a13373a7b3ef</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.1.0</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>${GlobalVariable.baseUrl}/booking</restUrl>
@@ -43,7 +43,7 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>111</defaultValue>
@@ -73,6 +73,20 @@
       <masked>false</masked>
       <name>checkOut</name>
    </variables>
+   <variables>
+      <defaultValue>'Phan'</defaultValue>
+      <description></description>
+      <id>51d86b78-d7ca-49b5-9e69-29f65ba4f2e5</id>
+      <masked>false</masked>
+      <name>lastName</name>
+   </variables>
+   <variables>
+      <defaultValue>'Huong'</defaultValue>
+      <description></description>
+      <id>477ebd56-7882-46c7-ae32-0ba89a0bd585</id>
+      <masked>false</masked>
+      <name>firstName</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -86,6 +100,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

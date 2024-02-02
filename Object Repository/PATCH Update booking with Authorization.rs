@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>PUT Update booking</name>
+   <name>PATCH Update booking with Authorization</name>
    <tag></tag>
-   <elementGuidId>df8e0147-1062-4137-b565-d51622369edd</elementGuidId>
+   <elementGuidId>f5802d9c-edba-48eb-b8a5-ec7de20ca348</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -35,15 +35,15 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Cookie</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>${token}</value>
+      <value>Basic YWRtaW46cGFzc3dvcmQxMjM=</value>
       <webElementGuid>6f271ff7-ede3-4292-a992-381e70db585d</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>9.1.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>PUT</restRequestMethod>
+   <restRequestMethod>PATCH</restRequestMethod>
    <restUrl>${GlobalVariable.baseUrl}/booking/${id}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
@@ -51,15 +51,8 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.token</defaultValue>
-      <description></description>
-      <id>d066c769-f01d-4d37-abca-245ecae69d72</id>
-      <masked>false</masked>
-      <name>token</name>
-   </variables>
    <variables>
       <defaultValue>'Huong01'</defaultValue>
       <description></description>
@@ -103,7 +96,7 @@
       <name>checkOut</name>
    </variables>
    <variables>
-      <defaultValue>'174'</defaultValue>
+      <defaultValue>'4367'</defaultValue>
       <description></description>
       <id>a1d8e95f-6fc8-40d4-88e5-0b159fe8c17f</id>
       <masked>false</masked>
@@ -121,6 +114,9 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
